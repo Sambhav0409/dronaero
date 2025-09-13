@@ -7,13 +7,13 @@
 <style>
   /* CSS Variables for theme colors */
   :root {
-    --color-primary: #00ccff;
-    --color-primary-dark: #0099cc;
+    --color-primary: #b433ff;
+    --color-primary-dark: #7a1cd6;
     --color-bg: #0a0f1a;
-    --color-bg-alt: #141c36;
-    --color-text-light: #dbe9f4;
-    --color-text-muted: #8497b0;
-    --color-accent: #33daff;
+    --color-bg-alt: #1a1133;
+    --color-text-light: #e7dfff;
+    --color-text-muted: #a48fd4;
+    --color-accent: #da7aff;
     --color-error: #ff3860;
     --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --transition-fast: 0.25s ease-in-out;
@@ -52,7 +52,7 @@
     position: fixed;
     top: 0; left: 0; right: 0;
     background: var(--color-bg-alt);
-    box-shadow: 0 0 12px rgba(0,204,255,0.3);
+    box-shadow: 0 0 12px rgba(180, 51, 255, 0.3);
     padding: 14px 24px;
     z-index: 9999;
     display: flex;
@@ -114,7 +114,7 @@
       gap: 24px;
       transform: translateX(100%);
       transition: transform 0.3s ease-in-out;
-      box-shadow: -4px 0 20px rgba(0,0,0,0.7);
+      box-shadow: -4px 0 20px rgba(180, 51, 255, 0.7);
       z-index: 9998;
     }
     nav.show {
@@ -132,7 +132,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, #002530 0%, #001518 100%);
+    background: linear-gradient(135deg, #3d0064 0%, #1a0033 100%);
     overflow: hidden;
     position: relative;
   }
@@ -161,7 +161,7 @@
     color: var(--color-bg);
     border-radius: 14px;
     cursor: pointer;
-    box-shadow: 0 10px 24px rgb(0 204 255 / 0.45);
+    box-shadow: 0 10px 24px rgba(180, 51, 255, 0.45);
     transition: background-color 0.3s ease;
   }
   .btn-primary:hover, .btn-primary:focus {
@@ -187,10 +187,10 @@
     margin: 0 auto;
   }
   .product-card {
-    background: #000c1a;
+    background: #1c003d;
     border-radius: 14px;
     padding: 36px 24px 32px;
-    box-shadow: 0 8px 18px rgb(0 204 255 / 0.25);
+    box-shadow: 0 8px 18px rgba(180, 51, 255, 0.25);
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -198,7 +198,7 @@
   }
   .product-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 14px 28px rgb(0 204 255 / 0.45);
+    box-shadow: 0 14px 28px rgba(180, 51, 255, 0.45);
   }
   .product-icon {
     font-size: 4.8rem;
@@ -296,16 +296,16 @@
     gap: 40px;
   }
   .team-member {
-    background: #001b30;
+    background: #1a0033;
     border-radius: 14px;
-    box-shadow: 0 6px 20px rgb(0 204 255 / 0.3);
+    box-shadow: 0 6px 20px rgba(180, 51, 255, 0.3);
     text-align: center;
     padding: 32px 20px 36px;
     transition: box-shadow 0.3s ease;
     cursor: default;
   }
   .team-member:hover {
-    box-shadow: 0 10px 36px rgb(0 204 255 / 0.6);
+    box-shadow: 0 10px 36px rgba(180, 51, 255, 0.6);
   }
   .member-photo {
     width: 118px;
@@ -347,8 +347,8 @@
   input, textarea {
     padding: 12px 14px;
     border-radius: 8px;
-    border: 2px solid #16325c;
-    background-color: #0b1633;
+    border: 2px solid #5c3473;
+    background-color: #210f4a;
     color: var(--color-text-light);
     font-size: 1rem;
     resize: none;
@@ -371,7 +371,7 @@
     font-weight: 700;
     border-radius: 12px;
     cursor: pointer;
-    box-shadow: 0 8px 20px rgb(0 204 255 / 0.45);
+    box-shadow: 0 8px 20px rgba(180, 51, 255, 0.45);
     transition: background-color 0.3s ease;
   }
   .btn-submit:hover, .btn-submit:focus {
@@ -388,9 +388,9 @@
     text-align: center;
     padding: 20px 10px;
     font-size: 0.9rem;
-    color: #626f89;
+    color: #a890bf;
     user-select: none;
-    box-shadow: inset 0 1px 6px rgba(0,0,0,0.5);
+    box-shadow: inset 0 1px 6px rgba(180, 51, 255, 0.3);
   }
   .footer-social {
     margin-bottom: 10px;
@@ -502,17 +502,7 @@
       <div class="member-name">Founder & CEO</div>
       <div class="member-role">Robotics Engineer</div>
     </div>
-<!--     <div class="team-member" tabindex="0" aria-label="Lead Software Engineer">
-      <img src="https://i.pravatar.cc/118?img=15" alt="Lead Software Engineer" class="member-photo" />
-      <div class="member-name">Lead Software Engineer</div>
-      <div class="member-role">Autonomy & SLAM Specialist</div>
-    </div>
-    <div class="team-member" tabindex="0" aria-label="Hardware & Embedded Systems Lead">
-      <img src="https://i.pravatar.cc/118?img=26" alt="Hardware Lead" class="member-photo" />
-      <div class="member-name">Hardware & Embedded Systems Lead</div>
-      <div class="member-role">Robotics & Sensor Integration</div>
-    </div>
-  </div> -->
+  </div>
 </section>
 <!-- Contact Section -->
 <section id="contact" class="container" >
@@ -612,9 +602,3 @@
 </script>
 </body>
 </html>
-
-
-
-
-
-
